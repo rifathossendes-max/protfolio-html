@@ -15,7 +15,6 @@
 }
 
 body {
-  background: var(--Body-color);
   color: var(--text-color);
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
@@ -28,6 +27,13 @@ nav {
   color: var(--Body-color);
   text-align: center;
 }
+
+h1 {
+  padding: 1rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px var(--footer-color);
+}
+
 a {
   text-decoration: none;
 }
@@ -38,49 +44,84 @@ li {
 
 .card {
   background: var(--card-color);
-  padding: 0.5rem;
-  margin: 1rem 0;
-  border-radius: 25px;
-  box-shadow: 5px 5px #25343f;
+  padding: 2rem;
+  margin: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px rag(0.0.1) var(--footer-color);
 }
+
 /* Start Entro section  */
 .entro {
   line-height: 1.6;
 }
-.entro h1 {
-  padding: 10px;
-  text-shadow: 2px 2px 4px var(--text-color);
-  text-transform: uppercase;
-}
+
 .entro img {
-  margin: 0.5rem;
+  padding: 1rem;
+  margin: 3rem;
   border-radius: 10px;
   box-shadow: 8px 8px 16px var(--footer-color);
 }
+
 /* End entro Section  */
 
+/* Start About Section  */
 
+.About {
+
+}
 
 /* Start Skill Section  */
-.skill {
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 1rem;
   text-align: center;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
-.skill h2 {
-  padding: 1rem;
+.skill tr th {
+  border: 2px solid #7aaace;
+}
+
+.skill tr td {
+  border: 2px solid #7aaace;
+}
+/* end skill section  */
+
+/* start contact section  */
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+  background-color: var(--Primary-color);
+ color: var(--Body-color);
+ padding: 0.5rem;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+button:hover{
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px var(--footer-color);
+  background-color: var(--footer-color);
+  transition: 0.2s;
+
 }
-.skill table tr th {
-
-  padding: 2rem;
-  text-align: center;
-   border-bottom: 1px solid #060606;
-}
-
-
-
-
+/* end contact section */
 
 /* Footer section  */
 footer {
